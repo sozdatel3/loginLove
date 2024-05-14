@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nik Kachanov - Full-Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #2d2a4a, #3c3567);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to right, #4b3b80, #6b5b95);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .experience {
+            background: rgba(75, 59, 128, 0.8);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5em;
+            position: relative;
+        }
+        nav a:after {
+            content: attr(data-title);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -30px;
+            background: #6b5b95;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, bottom 0.3s;
+        }
+        nav a:hover:after {
+            opacity: 1;
+            visibility: visible;
+            bottom: -40px;
+        }
+        section {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .projects, .contact-form {
+            background: rgba(75, 59, 128, 0.8);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .projects h2, .contact-form h2 {
+            margin-top: 0;
+        }
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        .projects li {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(107, 91, 149, 0.9);
+            border-radius: 5px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .projects li:hover {
+            transform: translateY(-5px);
+            background: rgba(107, 91, 149, 1);
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #6b5b95;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        .contact-form button:hover {
+            background-color: #4b3b80;
+        }
+        footer {
+            background: linear-gradient(to right, #4b3b80, #6b5b95);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .social-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="path/to/your/photo.jpg" alt="Nik Kachanov">
+        <h1>Nik Kachanov</h1>
+        <p>Full-Stack Software Developer with 3 years of experience</p>
+        <p>Skills: Django, Flutter, JavaScript...</p>
+    </header>
+
+    <nav>
+        <a href="#experience" data-title="Experience"><i class="fas fa-briefcase"></i></a>
+        <a href="#projects" data-title="Projects"><i class="fas fa-tasks"></i></a>
+        <a href="#contact" data-title="Contact"><i class="fas fa-envelope"></i></a>
+        <a href="#social" data-title="Social"><i class="fas fa-share-alt"></i></a>
+    </nav>
+
+    <section id="experience" class="experience">
+        <h2>Professional Experience</h2>
+        <p>I am a dedicated and efficient full-stack software developer with over three years of experience in creating and maintaining scalable, high-performance web and mobile applications. My expertise lies in using Django for backend development and Flutter for building responsive, cross-platform mobile applications. I have a strong foundation in JavaScript, enabling me to develop dynamic and interactive user interfaces.</p>
+        <p>Throughout my career, I have successfully led multiple projects from inception to completion, collaborating with cross-functional teams to deliver innovative solutions. My commitment to continuous learning and adaptability to new technologies ensures that I stay at the forefront of the industry.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1 - A comprehensive description of the first project...</li>
+            <li>Project 2 - A comprehensive description of the second project...</li>
+            <li>Project 3 - A comprehensive description of the third project...</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer id="social">
+        <p class="social-links">
+            <a href="https://github.com/your-github-username" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://t.me/your-telegram-username" target="_blank"><i class="fab fa-telegram"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
